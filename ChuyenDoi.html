@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chuyen doi</title>
+</head>
+<body>
+<form >
+<table>
+ <tr >
+    <td> <h4>Amount</h4>
+    <input id="input" type="number"></td>
+    <td style="padding-left: 50px ;padding-right: 50px">
+      <h4> From</h4>
+     <select id="1">
+       <option  value="23000">VND
+       </option>
+       <option  value="1">USD</option>
+     </select>
+    </td>
+    <td style="padding-right: 50px" >
+      <h4>To Currency</h4>
+      <select id="2"  " >
+        <option value="1">USD
+        </option>
+        <option value="23000">VND</option>
+      </select>
+    </td>
+    <td style="text-align: end" >
+      <input style="margin-top: 50px" onclick="convert()" type="button" value="Convert">
+    </td>
+ </tr>
+
+</table>
+</form>
+</body>
+<script>
+  function convert(){
+    let a=document.getElementById('input').value
+   let a1=document.getElementById('1').value
+    let a2=document.getElementById('2').value
+ let kq=(a*a2)/a1
+ alert(kq)}
+
+</script>
+</html>
